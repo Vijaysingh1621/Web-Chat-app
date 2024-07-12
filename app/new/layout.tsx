@@ -1,4 +1,6 @@
 import { Navbar } from "@/components/navbar";
+import { Sidebar } from "@/components/sidebar";
+
 
 
 
@@ -12,6 +14,9 @@ export default function NewLayout({ children }: NewLayoutProps) {
             
             <main className="flex w-full h-full">
             <Navbar />
+            <Sidebar/>
+            
+
                 <div className="h-full w-full pl-[300px]">
                     
                     {children}

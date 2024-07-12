@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { useMutation, useQuery } from "convex/react";
 import { api } from "@/convex/_generated/api";
+import { useApiMutation } from "@/hooks/useApiMutation";
 
 
 
@@ -18,7 +19,7 @@ interface UserCardProps {
 }
 
 export const UserCard = ({ otherUser }: UserCardProps) => {
-    const chat = useMutation(api.chats.getOrCreate);
+    const{ mutate:chat,pending} = useApiMutation(api.chats.getOrCreate);
     const router = useRouter();
 
     const handleClick = async () => {
