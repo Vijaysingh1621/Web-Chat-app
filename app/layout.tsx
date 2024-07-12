@@ -4,6 +4,7 @@ import "./globals.css";
 
 import { ConvexClientProvider } from "@/providers/convex-client-provider";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
  export const metadata: Metadata = {
@@ -19,7 +20,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ConvexClientProvider>{children}</ConvexClientProvider>
+        <ConvexClientProvider>{children}
+        </ConvexClientProvider>
         
         </body>
     </html>
