@@ -10,9 +10,9 @@ const New = () => {
     if (otherUsers === undefined) return <div>Loading...</div>;
 
     return (
-        <main className="flex flex-col">
-            <h1 className="text-4xl font-bold w-full text-center py-12 ml-[-200px]">Select a user to start a chat with.</h1>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-10">
+        <main className="flex flex-col sm:w-full">
+            <h1 className="text-4xl font-bold w-full text-center py-12 p-5 ">Select a user to start a chat with.</h1>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-10 p-5">
                 {otherUsers?.map((otherUser) => (
                     <UserCard key={otherUser._id} otherUser={otherUser} />
                 ))}

@@ -11,7 +11,7 @@ export default function ChatLayout({ children }: ChatLayoutProps) {
             <Navbar />
             <main className="flex h-full">
                 <Sidebar />
-                <div className="h-full w-full pl-[300px]">
+                <div className="h-full w-full lg:pl-[300px]">
                     {children}
                 </div>
             </main>

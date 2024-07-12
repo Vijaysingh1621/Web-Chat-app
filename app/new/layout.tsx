@@ -12,7 +12,7 @@ export default function NewLayout({ children }: NewLayoutProps) {
             <Navbar />
             <main className="flex w-full h-full">
                 <Sidebar />
-                <div className="h-full w-full pl-[300px]">
+                <div className="h-full w-full lg:pl-[300px] sm:pl-[0px] ">
                     {children}
                 </div>
             </main>

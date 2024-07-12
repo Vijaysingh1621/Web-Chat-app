@@ -49,11 +49,11 @@ export const Form = ({
             items-center 
             gap-2 
             lg:gap-4 
-            w-full
+            w-full 
         "
         >
             <div
-                className="flex items-center gap-2 lg:gap-4 w-[calc(100%-350px)]"
+                className="flex items-center gap-2 lg:gap-4 lg:w-[calc(100%-350px)]"
             >
                 <div className="relative w-full">
                     <input
@@ -66,7 +66,7 @@ export const Form = ({
                             bg-zinc-50
                             w-full 
                             rounded-full
-                            focus:outline-none
+                            focus:outline-none min-w-[320px] 
                         "
                         value={content}
                         onChange={(e) => setContent(e.target.value)}
