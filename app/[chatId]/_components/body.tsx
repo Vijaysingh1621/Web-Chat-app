@@ -19,7 +19,8 @@ export const Body = ({
     }, [messages]);
 
     return (
-        <div className="flex-1 overflow-y-auto">
+        <div className="h-full  bg-[#1a202c]">
+        <div className="flex-1 overflow-y-auto h-screen  ">
             {messages.map((message, i) => (
                 <MessageBox
                     key={message._id}
@@ -27,6 +28,7 @@ export const Body = ({
                 />
             ))}
             <div className="pt-24" ref={bottomRef} />
+        </div>
         </div>
     );
 }

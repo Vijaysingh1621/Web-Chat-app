@@ -29,12 +29,13 @@ export const ChatList = () => {
 
     return (
         <>
+        <div className="mt-11">
             <button onClick={() => { router.push("/new") }} className="flex space-x-1 text-white items-center cursor-pointer px-6">
                 <SparklesIcon />
                 <p className="text-zinc-300 font-medium pl-4 py-4">All chats</p>
             </button>
 
-            <div className="space-y-3">
+            <div className="space-y-3 ">
                 {userchats.map((chat) => (
                     <ChatBox
                         key={chat._id}
@@ -43,6 +44,7 @@ export const ChatList = () => {
                     />
                 ))}
             </div >
+            </div>
         </>
     );
 }

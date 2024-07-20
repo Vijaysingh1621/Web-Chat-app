@@ -22,7 +22,7 @@ const ChatPage = ({ params }: ChatProps) => {
     if (currentUser === null) return <div>Unauthorized</div>
 
     return (
-        <div className="h-full">
+        <div className="h-full ">
             <div className="h-full flex flex-col">
                 <Body messages={chatWithMessages.messagesWithUsers} />
                 <Form

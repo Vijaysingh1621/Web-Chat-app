@@ -48,7 +48,7 @@ export const ChatBox: React.FC<ChatBoxProps> = ({
                 transition
                 cursor-pointer'
         >
-            <Avatar>
+            <Avatar >
                 <AvatarImage src={otherUser?.imageUrl} />
                 <AvatarFallback>{otherUser?.fullName.charAt(0)}</AvatarFallback>
             </Avatar>

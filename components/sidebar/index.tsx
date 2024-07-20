@@ -15,11 +15,11 @@ export const Sidebar = () => {
         <>
             <div className="lg:hidden fixed top-4 left-4 z-50">
                 <button onClick={toggleSidebar}>
-                    {isOpen ? <FaTimes size={24} color="black" /> : <FaBars size={24} color="black" />}
+                    {isOpen ? <FaTimes size={24} color="white" /> : <FaBars size={24} color="white" />}
                 </button>
             </div>
-            <div className={`fixed top-0 left-0 flex flex-col w-[300px] h-full bg-gray-800  transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
-                <ChatList />
+            <div className={`fixed top-0 left-0 flex flex-col w-[300px] h-full bg-gray-900  z-10 transition-transform duration-300 ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:translate-x-0`}>
+                <ChatList  />
             </div>
         </>
     );

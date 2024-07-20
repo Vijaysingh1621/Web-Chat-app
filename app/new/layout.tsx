@@ -8,7 +8,7 @@ interface NewLayoutProps {
 
 export default function NewLayout({ children }: NewLayoutProps) {
     return (
-        <div className="w-full h-full">
+        <div className="w-full h-full fixed ">
             <Navbar />
             <main className="flex w-full h-full">
                 <Sidebar />

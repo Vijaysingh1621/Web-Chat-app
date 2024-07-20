@@ -43,7 +43,7 @@ export const Form = ({
             fixed
             bottom-0
             p-4
-            bg-zinc-100 
+            bg-slate-700 
             border-2
             flex 
             items-center 
@@ -53,17 +53,18 @@ export const Form = ({
         "
         >
             <div
-                className="flex items-center gap-2 lg:gap-4 lg:w-[calc(100%-350px)]"
+                className="flex items-center gap-2 lg:gap-4 lg:w-[calc(100%-350px)] "
             >
                 <div className="relative w-full">
                     <input
                         placeholder={"Enter message..."}
                         className="
-                            content-black
+                            content-gray-400
                             font-light
+                            text-white
                             py-2
                             px-4
-                            bg-zinc-50
+                            bg-gray-900
                             w-full 
                             rounded-full
                             focus:outline-none min-w-[320px] 

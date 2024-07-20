@@ -28,13 +28,13 @@ export const UserCard = ({ otherUser }: UserCardProps) => {
     }
 
     return (
-        <Card className="flex items-center justify-center bg-gray-100">
+        <Card className="flex items-center justify-center  bg-gray-400">
 
-            <CardContent className="flex flex-col items-center justify-center p-4 gap-y-4 bg-gray-100">
+            <CardContent className="flex flex-col items-center justify-center p-4 gap-y-4">
                 <div className="flex gap-5">
                     <Avatar>
                         <AvatarImage src={otherUser.imageUrl} />
-                        <AvatarFallback>{otherUser.fullName.charAt(0)}</AvatarFallback>
+                        <AvatarFallback >{otherUser.fullName.charAt(0) }</AvatarFallback>
                     </Avatar>
                     <p className="items-center text-center flex font-semibold">{otherUser.fullName}</p>
                 </div>
